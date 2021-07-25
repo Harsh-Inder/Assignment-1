@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(241, 238, 238);
+}
+h1{
+    text-align: center;
+    color: rgb(185, 11, 11);   
+    font-family:; 
+}
+dl{
+    background-color: rgb(218, 70, 70);
+    font-size: 35px;
+    border: 1.5px solid black;
+    position: sticky;
+    top: -1px;
+    margin:5px 15px;
+}
+
+li{
+    font-size: 22px;
+    list-style: '\1F4DE';
+    color: rgb(1, 46, 243);
+    font-family: 'Comfortaa', cursive;
+
+}
