@@ -4,7 +4,7 @@ body{
 h1{
     text-align: center;
     color: rgb(185, 11, 11);   
-    font-family:; 
+       font-family: 'Josefin Sans', sans-serif;
 }
 dl{
     background-color: rgb(218, 70, 70);
