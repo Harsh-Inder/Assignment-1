@@ -1,0 +1,35 @@
+body{
+background-color: black;
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items:center;
+flex-wrap: wrap;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div{
+    color: orange;
+    font-size: 1.5rem;
+    width: 12vw;
+    height: 65px;
+border: 1px solid orange;
+display: flex;
+align-content: flex-start;
+}
+
+div p{
+    margin: auto;
+}
+
+
+div:hover{
+    transform: translateY(-11px);
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    box-shadow: 0px 4px 2px greenyellow;
+    cursor: pointer;
+    text-shadow: 0.8px 2px 6px greenyellow;
+}
+
+
