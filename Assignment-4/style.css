@@ -1,0 +1,308 @@
+body{
+    background-color:rgb(221, 216, 216);
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    margin-right: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+#click{
+display: none;
+}
+
+nav .menu-btn i {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#food{
+color: white;
+font-size: 55px;
+margin-left: 55px;
+font-family: 'Lobster', cursive;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    padding: 0px 10px;
+    background-color: white;
+    color:black;
+    border-radius: 7px;
+}
+
+li{
+    color: white;
+    list-style: none;
+    display: flex;
+    font-size: 35px;
+}
+
+
+
+@media screen and (max-width:1150px) {
+    nav .menu-btn i {
+        font-size: 35px;
+        cursor: pointer;
+        display: block;
+        color: white;
+    }
+    nav .logo {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    nav ul {
+       
+        position: fixed;
+        top: 80px;
+        left: -150%;
+        background:black;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all 0.3 ease;
+        text-align: center;
+    }
+    #click:checked~ul {
+        left: 0%;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\e9b8";
+    }
+    nav ul li {
+        margin: 40px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        background-color:white;
+        color:black;
+        border-radius: 7px;
+    }
+}
+
+/* animation */
+
+.slides{
+    box-shadow: 2px 3px 2px slategrey;
+    margin: 30px auto;
+    width: 85vw;
+    height: 75vh;
+    border: 1px solid black;
+    animation-name: slides;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+@keyframes slides {
+0%{
+    background-image: url("https://images.unsplash.com/photo-1612392062126-5cc76074df9c?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    /* position: relative; */
+    width: 85vw;
+    height: 75vh;
+}
+
+    10%{
+        background-image: url("https://images.unsplash.com/photo-1612392062126-5cc76074df9c?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+/* position: relative; */
+width: 85vw;
+height: 75vh;
+    }
+    35%{
+        background-image: url("https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+        /* position: relative; */
+        width: 85vw;
+height: 75vh;
+    }
+    55%{
+        background-image: url("https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        /* position: relative; */
+        width: 85vw;
+        height: 75vh;
+    }
+    80%{
+        background-image: url("https://images.unsplash.com/photo-1601050690294-397f3c324515?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        /* position: relative; */
+        width: 85vw;
+        height: 75vh;
+    }
+    100%{
+        background-image: url("https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        /* position: relative; */
+        width: 85vw;
+        height: 75vh;
+    }
+
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+
+section{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    /* align-content: center; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+figure{
+    width: 330px;
+    /* height: 750px; */
+    border: 2.5px solid #ccc;
+    border-radius: 30px;
+    margin: 10px 5px;
+    text-align: center;
+}
+
+figure:hover{
+
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+figure img{
+    height: 320px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* form */
+
+#form{
+ margin: 10px auto;
+    width: 75vw;
+    height: 340px;
+    padding: 5px;
+  text-align:  center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.details{
+    padding: 7px;
+    margin: 0.6vw 1vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.details:hover{
+    background-color:gainsboro;
+}
+
+#textarea{
+    width: 43.5vw;
+    margin: 0.5vw 1vh;
+    border:2px solid black;
+    border-radius: 12px;
+}
+#textarea:hover{
+    background-color:gainsboro;
+}
+
+#submit{
+    width: 43.9vw;
+    height: 35px;
+    margin: 0.1vw 1vh;
+    border:2px solid black;
+
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-color: black;
+    color: white;
+    cursor:pointer;
+}
+
+
+
+@media screen and (max-width:1050px) {
+    #form{
+        width: 60vw;
+        height: 80vh;
+    }
+
+    .details {
+        height: 1vh;
+    }
+#textarea{
+    height: 30vh;
+}
+#submit{
+    height: 8vh;
+}
+
+}
+
+/* footer */
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 0px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 1% 1.5%;
+    justify-content: space-around;
+}
+
+
+footer a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: white;
+}
+
+#name{
+    background-color: black;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
